@@ -1,0 +1,33 @@
+{
+  "name": "owo-monogatari",
+  "version": "1.0.0",
+  "description": "OwO Story ~ OwO Monogatari",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jozsefsallai/owo-story-gen.git"
+  },
+  "author": "@jozsefsallai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jozsefsallai/owo-story-gen/issues"
+  },
+  "homepage": "https://github.com/jozsefsallai/owo-story-gen#readme",
+  "dependencies": {
+    "chie": "^0.1.0",
+    "owofy": "^0.3.2",
+    "request": "^2.88.0",
+    "unzipper": "^0.10.5"
+  },
+  "scripts": {
+    "download": "node bin/downloadGame",
+    "generate": "node bin/generate",
+    "clean": "rm -rf dist/CaveStory/*",
+    "dist": "npm run clean && npm run download && npm run generate",
+    "test": "mocha test"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  }
+}
